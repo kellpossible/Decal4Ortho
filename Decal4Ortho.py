@@ -31,10 +31,9 @@ if __name__ == '__main__':
     arguments = docopt(__doc__, version='Decal4Ortho 0.1')
 
     DEBUG = arguments["--debug"]
-    DEBUG = True
 
-    # if DEBUG:
-    print(arguments)
+    if DEBUG:
+        print(arguments)
 
     extension = arguments["--extension"].lower()
     filepaths = []
@@ -90,8 +89,7 @@ if __name__ == '__main__':
             if include_line:
                 new_data_lines.append(line)
             else:
-                if DEBUG:
-                    print("Removing decal: ", line)
+                print("Removing decal: ", line)
 
         if arguments["--decal"] is not None and not exclude_file:
             decal = arguments["--decal"]
