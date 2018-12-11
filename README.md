@@ -49,6 +49,8 @@ Let's say you've got a bunch of ortho photo sceneries in your `Custom Scenery` d
  zOrtho4XP_-45+168
 ```
 
+**WARNING**: This tool will modify your scenery files, please back up before before running. I will probably create a preview mode soon which allows you to preview what will be changed before applying the change.
+
 Now to add the default `lib/g10/decals/maquify_1_green_key.dcl` decal to these sceneries quickly and easily you can execute the following command:
 
 ```
